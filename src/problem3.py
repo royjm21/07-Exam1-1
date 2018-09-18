@@ -108,7 +108,61 @@ def problem3(point, length, delta, window):
     vertical_line.thickness = 3
     vertical_line.attach_to(window)
     thickness = 3
-    for k in range
+    horizontal1_end = rg.Point(point.x + length, point.y)
+    horizontal_line = rg.Line(point, horizontal1_end)
+    horizontal_line.color = 'magenta'
+    horizontal_line.attach_to(window)
+    horizontal_line.thickness = thickness
+    horizontal_line2_start = rg.Point(point.x, point.y + delta)
+    horizontal_line2_end = rg.Point(point.x + length + 20, point.y + delta)
+    horizontal_line2 = rg.Line(horizontal_line2_start, horizontal_line2_end)
+    horizontal_line2.color = 'cyan'
+    horizontal_line2.thickness = thickness
+    horizontal_line2.attach_to(window)
+    line3_start = rg.Point(point.x, point.y + 2*delta)
+    line3_end = rg.Point(point.x + length + 40, point.y + 2*delta)
+    line3 = rg.Line(line3_start, line3_end)
+    line3.color = 'spring green'
+    line3.thickness = thickness
+    line3.attach_to(window)
+    line4_start = rg.Point(point.x, point.y + 3*delta)
+    line4_end = rg.Point(point.x + length + 60, point.y + 3*delta)
+    line4 = rg.Line(line4_start, line4_end)
+    line4.thickness = thickness
+    line4.color = "magenta"
+    line4.attach_to(window)
+    line5_start = rg.Point(point.x, point.y + 4*delta)
+    line5_end = rg.Point(point.x + length + 80, point.y + 4*delta)
+    line5 = rg.Line(line5_start, line5_end)
+    line5.thickness = thickness
+    line5.color = 'cyan'
+    line5.attach_to(window)
+    line6_start = rg.Point(point.x, point.y + 5*delta)
+    line6_end = rg.Point(point.x + length + 100, point.y + 5*delta)
+    line6 = rg.Line(line6_start, line6_end)
+    line6.thickness = thickness
+    line6.color = 'spring green'
+    line6.attach_to(window)
+    line7_start = rg.Point(point.x, point.y + 6*delta)
+    line7_end = rg.Point(point.x + length + 120, point.y + 6*delta)
+    line7 = rg.Line(line7_start, line7_end)
+    line7.thickness = thickness
+    line7.color = 'magenta'
+    line7.attach_to(window)
+    line8_start = rg.Point(point.x, point.y + 7*delta)
+    line8_end = rg.Point(point.x + length + 140, point.y + 7*delta)
+    line8 = rg.Line(line8_start, line8_end)
+    line8.thickness = thickness
+    line8.color = 'cyan'
+    line8.attach_to(window)
+    line9_start = rg.Point(point.x, point.y + 8*delta)
+    line9_end = rg.Point(point.x + length + 160, point.y + 8*delta)
+    line9 = rg.Line(line9_start, line9_end)
+    line9.thickness = thickness
+    line9.color = 'spring green'
+    line9.attach_to(window)
+    window.render()
+
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
